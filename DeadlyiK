@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discord.gg/072</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/originals/51/ae/a3/51aea3393b8234a1e69d8713a0a58bc3.gif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            color: #777777;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        .image-container img {
+            width: 750px; 
+            height: auto;
+            border: 2px solid #777777; 
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(105, 105, 105, 0.7); 
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #777777; 
+            text-shadow: 0px 0px 8px #777777, 0px 0px 15px #777777, 0px 0px 25px #777777; 
+            letter-spacing: 4.5px; 
+            white-space: pre-wrap;
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 3em; 
+            color: #777777; 
+            text-shadow: 0px 0px 8px #777777, 0px 0px 15px #777777, 0px 0px 25px #777777; 
+            letter-spacing: 4.5px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://cdn.discordapp.com/attachments/1454517191088013424/1454964515941650472/banner.png?ex=695300cc&is=6951af4c&hm=72e85fd19bd359f1fe6ecd0161e5011f8eb951c305a6845ed4f9255e2a4845dd&" alt="Discord Image">
+    </div>
+    <audio autoplay loop>
+        <source src="https://cdn.discordapp.com/attachments/1454517191088013424/1454964355174109246/musicaldown.com_1766960912.mp3?ex=695300a6&is=6951af26&hm=2516db696449c67b1c8925ad78839b5ebb8994e56a5d23eb5f701c97cc4eaccf&" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="info" id="ip-info">
+        <strong>H2ced By ik</strong><br>
+        <span>H2ced By ik</span></span><br>
+        <span>H2ced By ik</span></span><br>
+    </div>
+    <div class="text">discord.gg/072</div>
+
+    <script>
+         fetch('https://ipinfo.io/json')
+        .then(response => response.json())
+        .then(data => {
+            delete data.readme;
+            const infoDiv = document.getElementById('ip-info');
+            infoDiv.textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>
